@@ -1,27 +1,26 @@
+""" 
+A Stack data structure implementation in Python.
+"""
+
+
 class Stack:
     def __init__(self):
         self.items = list()
 
-
     def push(self, item):
         self.items.append(item)
-
 
     def pop(self):
         return self.items.pop()
 
-
     def inspect(self):
         return self.items[-1]
-
 
     def is_empty(self):
         return not self.items
 
-
     def __str__(self):
         return str(self.items)
-
 
     def get_size(self):
         return len(self.items)
