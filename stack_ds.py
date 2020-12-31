@@ -1,5 +1,6 @@
 """ 
 A Stack data structure implementation in Python.
+@author: Michael Le
 """
 
 
