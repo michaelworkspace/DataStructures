@@ -14,17 +14,17 @@ class Stack:
     def pop(self):
         return self.items.pop()
 
-    def inspect(self):
+    def peek(self):
         return self.items[-1]
 
     def is_empty(self):
         return not self.items
 
-    def __str__(self):
-        return str(self.items)
-
     def get_size(self):
         return len(self.items)
+
+    def __str__(self):
+        return str(self.items)
 
 
 if __name__ == "__main__":
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     print(stack)
     print(stack.get_size())
     print(stack)
-    print(stack.inspect())
+    print(stack.peek())
     print(stack.pop())
     print(stack)
     stack.push(4)
